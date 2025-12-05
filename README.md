@@ -64,7 +64,8 @@ Workflow: `.github/workflows/update-calendar.yml`
   - Set up Python 3.12
   - `pip install -r requirements.txt`
   - `python generate_calendar.py`
-  - Commit `windsong_lunch.ics` if it changed
+  - Copies the generated file into `docs/windsong_lunch.ics`
+  - Commits updates if either file changed
 
 This keeps the calendar current without manual intervention.
 
@@ -94,6 +95,8 @@ If your district’s Nutrislice deployment uses a different endpoint pattern or 
 - `requirements.txt` — Python dependencies (minimal: `requests`).
 - `.github/workflows/update-calendar.yml` — weekly auto‑update workflow.
 - `windsong_lunch.ics` — generated calendar file (committed by CI).
+ - `docs/index.md` — GitHub Pages site with subscribe instructions and a live link.
+ - `docs/windsong_lunch.ics` — copy of the calendar served by GitHub Pages.
 
 ## Contributing
 
@@ -104,3 +107,15 @@ PRs welcome for:
 - Better error handling or richer event metadata.
 
 Open an issue if Nutrislice changes break the endpoint format; include the district and a sample working API URL from your browser network tab.
+
+## GitHub Pages
+
+To host a small site with subscribe instructions and a stable link:
+
+- In repository Settings → Pages, set “Source” to “Deploy from a branch”.
+- Choose Branch: `main`, Folder: `/docs`.
+- Save. Your site will be available at a URL like:
+  - `https://<org-or-user>.github.io/<repo>/`
+  - The calendar file will be at: `https://<org-or-user>.github.io/<repo>/windsong_lunch.ics`
+
+The workflow keeps `docs/windsong_lunch.ics` current. The `docs/index.md` page includes the link and copy‑paste steps for Google Calendar, Apple Calendar, and Outlook.
