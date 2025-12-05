@@ -1,19 +1,13 @@
-## Add the Windsong Lunch Calendar
+## Prosper ISD Lunch Calendars
 
-Click below to add/subscribe in your calendar app:
+Looking for your school’s lunch calendar? Use the school selector:
 
-- [Click here to add the calendar](windsong_lunch.ics)
+- [Open the school selector](./docs/)
 
-If your app asks for a URL, copy and paste:
+The selector page lets you search for your school, click to subscribe, or copy a direct subscribe URL for your calendar app.
 
-```
-https://raw.githubusercontent.com/gairodev/prosper-windsong-lunch-calendar/main/windsong_lunch.ics
-```
-
-Quick steps:
-- Google Calendar (web): Other calendars → + → From URL → paste link → Add
-- Apple Calendar (macOS): File → New Calendar Subscription… → paste link → Subscribe
-- iPhone/iPad: Settings → Calendar → Accounts → Add Account → Other → Add Subscribed Calendar → paste link
-- Outlook (web): Add calendar → Subscribe from web → paste link → Import
-
-
+### How to subscribe
+- **Google Calendar (web)**: Other calendars → + → From URL → paste the school link → Add
+- **Apple Calendar (macOS)**: File → New Calendar Subscription… → paste the school link → Subscribe
+- **iPhone/iPad**: Settings → Calendar → Accounts → Add Account → Other → Add Subscribed Calendar → paste the school link
+- **Outlook (web)**: Add calendar → Subscribe from web → paste the school link → Import
